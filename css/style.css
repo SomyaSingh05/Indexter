@@ -1,9 +1,141 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
-body{
+/* body{
     font-family: "Nunito", sans-serif;
 }
 
 .nav-link.active{
     color:red !important;
+} */
+
+.navbar {
+    
+    background: rgba(15, 23, 42, 0.8) !important; 
+    
+  
+    backdrop-filter: blur(12px); 
+    -webkit-backdrop-filter: blur(12px);
+    
+       border-bottom: 1px solid rgba(255, 255, 255, 0.08); 
+    
+    padding: 15px 0;
+    transition: all 0.3s ease;
+}
+
+
+.navbar-brand, .nav-link {
+    color: #ffffff !important;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+
+.nav-link:hover {
+    color: #0dcaf0 !important;
+    transition: 0.3s;
+}
+
+.navbar.scrolled {
+    background: rgba(15, 23, 42, 0.8) !important; 
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px); 
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1); 
+    padding: 10px 0;
+    transition: all 0.4s ease-in-out;
+}
+
+
+.navbar.scrolled .nav-link, 
+.navbar.scrolled .navbar-brand {
+    color: #ffffff !important;
+}
+
+.navbar.scrolled .nav-link:hover {
+    color: #0dcaf0 !important; 
+}
+
+body {
+    background-color: #0f172a; 
+    color: #ffffff;
+}
+
+
+#about, #services, #pricing {
+    background-color: #0f172a !important;
+}
+
+
+.shadow-lg {
+    background-color: #1e293b !important;
+    color: white !important;
+    border: 1px solid #334155;
+}
+
+
+h1, h2, h3, h4, p {
+    color: #f1f5f9;
+}
+
+.accordion-item {
+    background-color: #1e293b;
+    color: white;
+    border: 1px solid #334155;
+}
+
+.accordion-button {
+    background-color: #1e293b;
+    color: white;
+}
+
+
+.shadow-lg {
+    background-color: #1a2236 !important; 
+    border: 1px solid rgba(255, 255, 255, 0.1) !important; 
+    color: #ffffff !important;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4) !important; 
+}
+
+
+.shadow-lg p, .shadow-lg h4 {
+    color: #e2e8f0 !important;
+}
+.accordion-item {
+    background-color: #1a2236 !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    margin-bottom: 15px;
+}
+
+.accordion-button {
+    background-color: #1a2236 !important;
+    color: #ffffff !important;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #0dcaf0 !important; 
+    color: white !important;
+}
+
+.accordion-body {
+    color: #cbd5e1 !important;
+}
+#pricing .shadow-lg {
+    transition: transform 0.3s ease;
+}
+
+#pricing .col-lg-4:hover .shadow-lg {
+    transform: translateY(-10px);
+    border-color: #0dcaf0 !important;
+}
+
+
+.list-group-item {
+    background-color: transparent !important;
+    color: #94a3b8 !important;
+    border-color: rgba(255, 255, 255, 0.05) !important;
+}
+
+#home h1 {
+    background: linear-gradient(to right, #fff, #0dcaf0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 3.5rem;
 }

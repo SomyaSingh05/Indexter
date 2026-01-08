@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
       bsCollapse.hide();
     }
   });
-  // 👇 NEW: Close menu when clicking any nav link
+  //  Close menu when clicking any nav link
 const navLinks = document.querySelectorAll('.nav-link');
 navLinks.forEach(link => {
   link.addEventListener('click', () => {
@@ -31,5 +31,14 @@ navLinks.forEach(link => {
   });
 });
 });
+
+window.onscroll = function() {
+    const nav = document.querySelector('.navbar');
+    if (window.scrollY > 50) {
+        nav.classList.add('scrolled');
+    } else {
+        nav.classList.remove('scrolled');
+    }
+};
 
 
