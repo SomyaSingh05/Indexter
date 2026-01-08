@@ -8,6 +8,15 @@
     color:red !important;
 } */
 
+body, html {
+    overflow-x: hidden;
+}
+.row {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+
 .navbar {
     
     background: rgba(15, 23, 42, 0.8) !important; 
